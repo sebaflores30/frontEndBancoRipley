@@ -13,7 +13,7 @@ import { Sweetalert2Service } from './services/alertSevice.service';
 import {TransferenciaService} from './services/transferencia.service';
 import { DestinatarioService } from "./services/destinatario.service";
 import { BancosService } from "./services/bancos.service";
-import {  LoginService} from "./services/login.service";
+import { LoginService} from "./services/login.service";
 import { RouterModule } from '@angular/router';
 import {HomeComponent} from './components/home/home.component'
 
