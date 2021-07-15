@@ -8,7 +8,7 @@ import { DestinatarioComponent } from './components/destinatario/destinatario.co
 import { MenuComponent } from './shared/sharedComponents/menu/menu.component';
 import { HistorialService } from './services/historial.service';
 import { HttpClientModule } from '@angular/Common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Sweetalert2Service } from './services/alertSevice.service';
 
 @NgModule({
@@ -24,6 +24,7 @@ import { Sweetalert2Service } from './services/alertSevice.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [HistorialService, Sweetalert2Service],
