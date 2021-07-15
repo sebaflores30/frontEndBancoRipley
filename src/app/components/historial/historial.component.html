@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre Destinatario</th>
+      <th scope="col">RUT</th>
+      <th scope="col">Banco</th>
+      <th scope="col">Tipo de cuenta</th>
+      <th scope="col">Monto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let h of historial">
+      <td>{{h.nom_dest}}</td>
+      <td>{{h.rut}}</td>
+      <td>{{h.banco}}</td>
+      <td>{{h.tpo_cuenta}}</td>
+      <td>{{h.monto}}</td>
+    </tr>
+  </tbody>
+</table>

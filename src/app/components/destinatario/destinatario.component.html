@@ -1,0 +1,39 @@
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Datos Destinatario</h5>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Rut</label>
+        <input type="text" class="form-control" id="formGroupExampleInput1" [(ngModel)]="destinatario.rut">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="destinatario.nombre">
+        <label for="formGroupExampleInput" class="form-label">Correo</label>
+        <input type="text" class="form-control" id="formGroupExampleInput3" [(ngModel)]="destinatario.correo">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Telefono</label>
+        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control"
+          id="formGroupExampleInput4" [(ngModel)]="destinatario.telefono">
+        <label for="formGroupExampleInput" class="form-label">Banco</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="destinatario.banco">
+          <option *ngFor="let banco of bancos; let i = index ">{{banco.name}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput3" class="form-label">Tipo de cuenta</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="destinatario.tpo_cuenta">
+          <option selected>Open this select menu</option>
+          <option value="Cuenta vista">Cuenta vista</option>
+          <option value="Cuenta corriente">Cuenta corriente</option>
+          <option value="Cuenta">Cuenta ahorro</option>
+        </select>
+        <label for="formGroupExampleInput" class="form-label">N° de cuenta</label>
+        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control"
+          id="formGroupExampleInput5" [(ngModel)]="destinatario.cuenta">
+      </div>
+      <a class="btn btn-secondary" (click)="creaDestinatario() ">Guardar</a>
+    </div>
+  </div>
+</div>

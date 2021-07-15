@@ -1,0 +1,46 @@
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Datos Destinatario</h5>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Seleccione N° de cuenta del destinatario</label>
+        <select class="form-select" #selectDestinatario (change)="buscaDestinatario(selectDestinatario.value)">
+          <option selected disabled value="">Seleccione...</option>
+          <option *ngFor="let d of destinatarios; let i = index" [value]="d.cuenta">{{d.nombre}} {{d.cuenta}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nombre Destinatario</label>
+        <input class="form-control" type="text" aria-label="Disabled input example" disabled
+          [(ngModel)]="destinatario.nombre">
+
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Correo</label>
+        <input class="form-control" type="text" aria-label="Disabled input example" disabled
+          [(ngModel)]="destinatario.correo">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Banco</label>
+        <input class="form-control" type="text" aria-label="Disabled input example" disabled
+          [(ngModel)]="destinatario.banco">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Tipo de cuenta</label>
+        <input class="form-control" type="text" aria-label="Disabled input example" disabled
+          [(ngModel)]="destinatario.tpo_cuenta">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Monto</label>
+        <input class="form-control" type="text" placeholder="Ingrese monto a transferir"
+          aria-label="default input example" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+          [(ngModel)]="transferencia.monto">
+      </div>
+      <div class="mb-3">
+        <div class="d-grid gap-1">
+          <button class="btn btn-secondary" type="button" (click)="creaTransferencia()">Transferir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
