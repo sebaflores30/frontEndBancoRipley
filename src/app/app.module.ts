@@ -15,6 +15,7 @@ import { DestinatarioService } from "./services/destinatario.service";
 import { BancosService } from "./services/bancos.service";
 import {  LoginService} from "./services/login.service";
 import { RouterModule } from '@angular/router';
+import {HomeComponent} from './components/home/home.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RouterModule } from '@angular/router';
     HistorialComponent,
     TransferenciaComponent,
     DestinatarioComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
     
   ],
   imports: [
