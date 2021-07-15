@@ -11,14 +11,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.1.1",
-    "@angular/common": "~12.1.1",
-    "@angular/compiler": "~12.1.1",
-    "@angular/core": "~12.1.1",
-    "@angular/forms": "~12.1.1",
-    "@angular/platform-browser": "~12.1.1",
-    "@angular/platform-browser-dynamic": "~12.1.1",
-    "@angular/router": "~12.1.1",
+    "@angular/animations": "~12.1.2",
+    "@angular/common": "~12.1.2",
+    "@angular/compiler": "~12.1.2",
+    "@angular/core": "~12.1.2",
+    "@angular/forms": "~12.1.2",
+    "@angular/platform-browser": "~12.1.2",
+    "@angular/platform-browser-dynamic": "~12.1.2",
+    "@angular/router": "~12.1.2",
     "bootstrap": "^3.4.1",
     "express": "^4.17.1",
     "rxjs": "~6.6.0",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.1",
     "@angular/cli": "^11.0.2",
-    "@angular/compiler-cli": "^10.0.14",
+    "@angular/compiler-cli": "^12.1.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
@@ -39,7 +39,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.6.0",
-    "typescript": "~3.9.5"
+    "typescript": "^3.1.6"
   },
   "engines": {
     "node": "16.4.2",
