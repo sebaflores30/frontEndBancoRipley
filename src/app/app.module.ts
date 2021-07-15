@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { TransferenciaComponent } from './components/transferencia/transferencia.component';
 import { DestinatarioComponent } from './components/destinatario/destinatario.component';
-import { MenuComponent } from './shared/sharedComponents/menu/menu.component';
+import { NavComponent } from './shared/sharedComponents/menu/nav.component';
 import { HistorialService } from './services/historial.service';
 import { HttpClientModule } from '@angular/Common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
     HistorialComponent,
     TransferenciaComponent,
     DestinatarioComponent,
-    MenuComponent
+    NavComponent
     
   ],
   imports: [
