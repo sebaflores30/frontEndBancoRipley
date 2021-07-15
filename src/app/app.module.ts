@@ -10,6 +10,10 @@ import { HistorialService } from './services/historial.service';
 import { HttpClientModule } from '@angular/Common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Sweetalert2Service } from './services/alertSevice.service';
+import {TransferenciaService} from './services/transferencia.service';
+import { DestinatarioService } from "./services/destinatario.service";
+import { BancosService } from "./services/bancos.service";
+import {  LoginService} from "./services/login.service";
 
 @NgModule({
   declarations: [
@@ -27,7 +31,12 @@ import { Sweetalert2Service } from './services/alertSevice.service';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [HistorialService, Sweetalert2Service],
+  providers: [HistorialService, 
+    Sweetalert2Service, 
+    TransferenciaService, 
+    DestinatarioService, 
+    BancosService, 
+    LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
