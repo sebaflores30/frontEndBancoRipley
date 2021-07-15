@@ -14,6 +14,7 @@ import {TransferenciaService} from './services/transferencia.service';
 import { DestinatarioService } from "./services/destinatario.service";
 import { BancosService } from "./services/bancos.service";
 import {  LoginService} from "./services/login.service";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {  LoginService} from "./services/login.service";
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [HistorialService, 
     Sweetalert2Service, 
